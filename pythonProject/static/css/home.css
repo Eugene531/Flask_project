@@ -1,0 +1,30 @@
+html,
+body {
+    height: 100%;
+    background-color: #f5f5f5;
+}
+ul.list-posts h2{
+    text-align: center;
+}
+ul.list-posts {
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+}
+ul.list-posts li {
+    margin: 20px 0 0 0;
+    border: 1px solid #000000;
+}
+ul.list-posts .title {
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+    background: #eee;
+}
+ul.list-posts .annonce {
+    text-align: center;
+    margin: 0;
+    padding: 10px 5px 10px 5px;
+}

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+ 
+{% block content %}
+{{ super() }}
+<link href="../static/css/home.css" rel="stylesheet">
+<hr>
+<ul class="list-posts">
+<a href="/add_post">Add message</a></p>
+<h2>All messages from all users</h2>
+{% for p in posts %}
+<li>
+<p class="title"><a href="{{ url_for('showPost', id_post=p.id)}}">{{p.title}}</a></p>
+<p class="annonce">{{ p.text[:50]}}</p>
+</li>
+{% endfor %}
+</ul>
+{% endblock %}
